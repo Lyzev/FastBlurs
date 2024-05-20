@@ -1,0 +1,13 @@
+
+uniform sampler2D SpriteTexture;
+
+in  mediump vec2 Tex;
+
+layout (location = 0) out lowp vec4 fragColor; 
+
+
+void main(void) {
+	fragColor = texture(SpriteTexture, Tex);
+}
+
+
